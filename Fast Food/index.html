@@ -3,23 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Food</title>
+    <title>Fast Food - Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Fast Food</a>
+            <a class="navbar-brand" href="index.html">Fast Food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <div class="container mt-5 text-center">
-        <h1>Welcome to Fast Food</h1>
-        <p>Fresh food, delivered fast - coming soon</p>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Fresh Food, Delivered Fast</h1>
+            <p>Hot meals made from fresh ingredients, delivered to your door in 30 minutes.</p>
+            <a href="menu.html" class="btn btn-warning btn-lg">View Menu</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg ms-2">Contact Us</a>
+        </div>
     </div>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>Fast Delivery</h4>
+                    <p>We deliver your order in under 30 minutes anywhere in the city.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Fresh Ingredients</h4>
+                    <p>All our food is made from fresh, locally sourced ingredients.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Great Prices</h4>
+                    <p>Quality food at prices that won't break the bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Popular Dishes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Smash Burger</h5>
+                            <p class="card-text">Double patty, cheddar cheese, caramelised onions and our special sauce.</p>
+                            <p class="price">KSh 950</p>
+                            <a href="menu.html" class="btn btn-danger">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">BBQ Platter</h5>
+                            <p class="card-text">Ribs, chicken wings and sausage with three dipping sauces.</p>
+                            <p class="price">KSh 1,850</p>
+                            <a href="menu.html" class="btn btn-danger">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita Pizza</h5>
+                            <p class="card-text">Stone baked with mozzarella, tomato sauce and fresh basil.</p>
+                            <p class="price">KSh 1,200</p>
+                            <a href="menu.html" class="btn btn-danger">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Fast Food &copy; 2026 | 14 Ngong Road, Nairobi | +254 700 123 456</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="menu.html">Menu</a> |
+                <a href="about.html">About</a> |
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
