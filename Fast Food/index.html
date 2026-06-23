@@ -6,6 +6,25 @@
     <title>Fast Food - Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .menu-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+        .card-img-top {
+            object-fit: cover;
+            height: 250px;
+        }
+        .btn-custom {
+            border-radius: 50px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,7 +41,6 @@
                 <ul class="navbar-nav ms-auto fs-5">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -31,47 +49,35 @@
 
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Our Menu</h2>
+            <h2 class="text-center mb-5 fw-bold" style="font-family: 'Friz Quadrata', 'FrizQuadrata', serif;">Our Menu Categories</h2>
             <div class="row">
                 
                 <div class="col-md-4 mb-4">
-                    <div class="card text-center p-3">
-                        <div class="card-body">
-                            <h3 class="card-title text-danger mb-3">Fast Foods</h3>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2">Chips</li>
-                                <li class="mb-2">Burgers</li>
-                                <li class="mb-2">Fried Chicken</li>
-                                <li class="mb-2">Hotdogs</li>
-                                <li class="mb-2">Shawarma</li>
-                                <li class="mb-2">Samosa</li>
-                                <li class="mb-2">Bhajia</li>
-                            </ul>
-                            <a href="menu.html" class="btn btn-danger">View Foods</a>
+                    <div class="card text-center h-100 shadow-sm border-0 menu-card">
+                        <img src="images ff/fast food ff.jpg" class="card-img-top" alt="Fast Foods">
+                        <div class="card-body d-flex flex-column justify-content-center p-4">
+                            <h3 class="card-title text-danger mb-4 fw-bold">Fast Foods</h3>
+                            <a href="menu.html" class="btn btn-danger mt-auto stretched-link btn-custom">View Foods</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <div class="card text-center p-3">
-                        <div class="card-body">
-                            <h3 class="card-title text-danger mb-3">Drinks</h3>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2">Soda</li>
-                            </ul>
-                            <a href="menu.html" class="btn btn-danger">View Drinks</a>
+                    <div class="card text-center h-100 shadow-sm border-0 menu-card">
+                        <img src="images ff/drinks ff.jpg" class="card-img-top" alt="Drinks">
+                        <div class="card-body d-flex flex-column justify-content-center p-4">
+                            <h3 class="card-title text-danger mb-4 fw-bold">Drinks</h3>
+                            <a href="menu.html" class="btn btn-danger mt-auto stretched-link btn-custom">View Drinks</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-4">
-                    <div class="card text-center p-3">
-                        <div class="card-body">
-                            <h3 class="card-title text-danger mb-3">Desserts</h3>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2">Milkshake</li>
-                            </ul>
-                            <a href="menu.html" class="btn btn-danger">View Desserts</a>
+                    <div class="card text-center h-100 shadow-sm border-0 menu-card">
+                        <img src="images ff/desserts ff.jpg" class="card-img-top" alt="Desserts">
+                        <div class="card-body d-flex flex-column justify-content-center p-4">
+                            <h3 class="card-title text-danger mb-4 fw-bold">Desserts</h3>
+                            <a href="menu.html" class="btn btn-danger mt-auto stretched-link btn-custom">View Desserts</a>
                         </div>
                     </div>
                 </div>
@@ -82,11 +88,10 @@
 
     <footer class="bg-dark text-light py-4 text-center">
         <div class="container">
-            <p class="mb-2">Fast Food &copy; 2026 | 14 Ngong Road, Nairobi | +254 700 123 456</p>
+            <p class="mb-2">Fast Food Project Demo | 123 Street Wise Lane, Taiwan | +123 122 133 144</p>
             <p class="mb-0">
                 <a href="index.html" class="text-warning text-decoration-none mx-2">Home</a> |
                 <a href="menu.html" class="text-warning text-decoration-none mx-2">Menu</a> |
-                <a href="about.html" class="text-warning text-decoration-none mx-2">About</a> |
                 <a href="contact.html" class="text-warning text-decoration-none mx-2">Contact</a>
             </p>
         </div>

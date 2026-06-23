@@ -8,9 +8,6 @@ Built using HTML, CSS, Bootstrap and JavaScript.
 - menu.html - Our menu
 - about.html - About us
 - contact.html - Contact form
-- gallery.html - Food gallery
-- blog.html - Blog posts
-- faq.html - FAQ
 
 ## Technologies
 - HTML5
