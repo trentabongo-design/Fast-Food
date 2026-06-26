@@ -3,96 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Food - Home</title>
+    <title>Fast Food - Home (Preview)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <style>
-        .menu-card {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            border-radius: 12px;
-            overflow: hidden;
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 70px;
         }
-        .menu-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+
+        /* navbar */
+        .navbar {
+            background-color: #1a1a1a;
         }
-        .card-img-top {
-            object-fit: cover;
-            height: 250px;
-        }
-        .btn-custom {
-            border-radius: 50px;
+
+        .navbar-brand {
+            color: #c8102e !important;
             font-weight: bold;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #ffd700 !important;
+        }
+
+        /* hero */
+        .hero {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        /* category cards */
+        .category-card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .price {
+            color: #c8102e;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #aaa;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <!-- Navbar: Logo left, links middle, sign in/up right -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand text-danger fs-1 d-flex align-items-center" href="index.html">
-                <img src="images ff/fast ff.avif" alt="Fast" height="110" class="me-2">
-                <span style="font-family: 'Friz Quadrata', 'FrizQuadrata', serif; font-weight: 900; font-style: italic;">Food</span>
-            </a>
+            <a class="navbar-brand" href="index.html">Fast Food</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-5">
+                <!-- Centre links -->
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
+                <!-- Sign In/Up on the right -->
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-light btn-sm">Sign In</a>
+                    <a href="signup.html" class="btn btn-danger btn-sm">Sign Up</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <section class="py-5 bg-light">
+    <!-- Hero -->
+    <div class="hero">
         <div class="container">
-            <h2 class="text-center mb-5 fw-bold" style="font-family: 'Friz Quadrata', 'FrizQuadrata', serif;">Our Menu Categories</h2>
-            <div class="row">
-                
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center h-100 shadow-sm border-0 menu-card">
-                        <img src="images ff/fast food ff.jpg" class="card-img-top" alt="Fast Foods">
-                        <div class="card-body d-flex flex-column justify-content-center p-4">
-                            <h3 class="card-title text-danger mb-4 fw-bold">Fast Foods</h3>
-                            <a href="menu.html" class="btn btn-danger mt-auto stretched-link btn-custom">View Foods</a>
+            <h1>Fast Food</h1>
+        </div>
+    </div>
+
+    <!-- Food Categories - clicking takes you to that section on menu page -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">What are you craving?</h2>
+            <div class="row g-4 text-center">
+
+                <div class="col-md-4">
+                    <a href="menu.html#fastfoods" class="text-decoration-none text-dark">
+                        <div class="card category-card p-3 h-100">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Fast Foods">
+                            <div class="card-body">
+                                <h3 class="text-danger fw-bold">Fast Foods</h3>
+                                <p class="text-muted">Chips · Burgers · Fried Chicken · Hotdogs · Shawarma · Samosa · Bhajia</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center h-100 shadow-sm border-0 menu-card">
-                        <img src="images ff/drinks ff.jpg" class="card-img-top" alt="Drinks">
-                        <div class="card-body d-flex flex-column justify-content-center p-4">
-                            <h3 class="card-title text-danger mb-4 fw-bold">Drinks</h3>
-                            <a href="menu.html" class="btn btn-danger mt-auto stretched-link btn-custom">View Drinks</a>
+                <div class="col-md-4">
+                    <a href="menu.html#drinks" class="text-decoration-none text-dark">
+                        <div class="card category-card p-3 h-100">
+                            <img src="https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=500&q=80" alt="Drinks">
+                            <div class="card-body">
+                                <h3 class="text-danger fw-bold">Drinks</h3>
+                                <p class="text-muted">Soda</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="card text-center h-100 shadow-sm border-0 menu-card">
-                        <img src="images ff/desserts ff.jpg" class="card-img-top" alt="Desserts">
-                        <div class="card-body d-flex flex-column justify-content-center p-4">
-                            <h3 class="card-title text-danger mb-4 fw-bold">Desserts</h3>
-                            <a href="menu.html" class="btn btn-danger mt-auto stretched-link btn-custom">View Desserts</a>
+                <div class="col-md-4">
+                    <a href="menu.html#desserts" class="text-decoration-none text-dark">
+                        <div class="card category-card p-3 h-100">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&q=80" alt="Desserts">
+                            <div class="card-body">
+                                <h3 class="text-danger fw-bold">Desserts</h3>
+                                <p class="text-muted">Milkshake</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-light py-4 text-center">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-            <p class="mb-2">Fast Food Project Demo | 123 Street Wise Lane, Taiwan | +123 122 133 144</p>
-            <p class="mb-0">
-                <a href="index.html" class="text-warning text-decoration-none mx-2">Home</a> |
-                <a href="menu.html" class="text-warning text-decoration-none mx-2">Menu</a> |
-                <a href="contact.html" class="text-warning text-decoration-none mx-2">Contact</a>
+            <p>Fast Food &copy; 2026 | 14 Ngong Road, Nairobi | +254 700 123 456</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="menu.html">Menu</a> |
+                <a href="about.html">About</a> |
+                <a href="contact.html">Contact</a>
             </p>
         </div>
     </footer>
