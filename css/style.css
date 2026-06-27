@@ -1,0 +1,78 @@
+.navbar {
+    background-color: #c8102e;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* hero */
+.hero {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* cards */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.price {
+    color: #c8102e;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* footer */
+footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
